@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://polymath.cloud/',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Polymath',
+  subtitle: 'I obsess over weird topics. Learn with me!',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 500,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
@@ -25,9 +25,9 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Bee',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Hacker.',
     contacts: {
       email: '',
       facebook: '#',
