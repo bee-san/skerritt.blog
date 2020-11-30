@@ -27,12 +27,12 @@ module.exports = {
   author: {
     name: 'Bee',
     photo: '/photo.jpg',
-    bio: '🌆 Computer Scientist ✨Subreddit Lead of @RealTryHackMe and @SecArmyOfficial mod💖 Inventor of RustScan and Ciphey 🌌',
+    bio: "🌌 Computer Scientist ✨Subreddit Lead of @RealTryHackMe 💖 Inventor of RustScan and Ciphey 🌙 Rustacean 🦀",
     contacts: {
       email: '',
       facebook: '',
       telegram: '',
-      twitter: '',
+      twitter: 'https://twitter.com/bee_sec_san',
       github: 'https://github.com/bee-san',
       rss: '',
       vkontakte: '',
