@@ -3,7 +3,7 @@ title: Making Hacking Accessible
 date: "2020-10-01T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "p2pnetworks"
+slug: "a11y"
 category: "Accessibility"
 tags:
   - "Hacking"
