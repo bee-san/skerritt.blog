@@ -16,7 +16,7 @@ module.exports = [
       'line-height',
       'letter-spacing',
       'margin',
-      'margin-top',
+
       'margin-left',
       'margin-bottom',
       'margin-right',

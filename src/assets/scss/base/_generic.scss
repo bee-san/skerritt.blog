@@ -30,16 +30,16 @@ h6 {
 
 h1 {
   font-size: $typographic-base-font-size * 2.5;
-  @include line-height(2);
-  @include margin-top(4);
-  @include margin-bottom(1);
+  @include line-height(0);
+  @include margin-top(2);
+  @include margin-bottom(0);
 }
 
 h2 {
   font-size: $typographic-base-font-size * 1.6875;
-  @include line-height(1.5);
+  @include line-height(0);
   @include margin-top(2);
-  @include margin-bottom(.5);
+  @include margin-bottom(0);
 }
 
 h3 {
@@ -134,6 +134,10 @@ figure {
   display: block;
   width: 100%;
   height: auto;
+}
+
+h1 h2 h3 {
+  margin-top: 2 !important;
 }
 
 figcaption {

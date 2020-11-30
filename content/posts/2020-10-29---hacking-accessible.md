@@ -18,7 +18,7 @@ In this post, I aim to distil some guidelines for making hacking accessible.
 
 I am by no means an expert. I don’t even work in A11Y. However, I do have some wonderful friends that do — and I am passionate about this subject.
 
-# Why We Need to Focus on Accessibility
+## Why We Need to Focus on Accessibility
 1. Basic human rights
 2. An expansion in the infosec community of new tools, new learning platforms, and new hackers
 3. SEO
@@ -27,7 +27,7 @@ I am by no means an expert. I don’t even work in A11Y. However, I do have some
 
 Let’s go through these.
 
-# Basic Human Rights
+## Basic Human Rights
 Hacking isn’t just inaccessible, it is the opposite — it is actively discluding members from the community because of some issues they were born or developed that they cannot help.
 
 It is a basic human right to extend everything we do to be accessible to everyone. In the same way, it is a right for you to get healthcare, to get an education.
@@ -374,7 +374,7 @@ The general order of images should be:
 3. Alt text.
 
 # Fancy ASCII Markup
-Do not use ASCII instead of HTML elements like <h1>.
+Do not use ASCII instead of HTML elements like `<h1>`.
 
 Take a look at this:
 <figure>
@@ -384,9 +384,7 @@ Take a look at this:
 
 That header may look fancy, but let’s take a look at the HTML.
 
-```
-<span style="font-size:18px">.:. Objects .:.</span>
-```
+`<span style="font-size:18px">.:. Objects .:.</span>`
 
 So not only is it not a header tag (instead, the font size is just slightly increased) but instead of using a header, it uses “.:.” to signify it’s a header.
 
@@ -408,13 +406,15 @@ It’s just bad practice and takes more work than using regular HTML.
 
 The worst part is that the editor for writing this has buttons you can click which use HTML tags. But instead, people forgo clicking a single button to make their own tags, or to use some weird ASCII markup to “look cool”. You are not cool for deliberately excluding a vast majority of people from using your work.
 
+
 ```
 The Unknown Fawn
-----------------
+-------------
 ```
 
+Now, there's 2 things about this.
 1. This is completely unreadable in TTS.
-2. This won’t scale well on any devices other than the creators device.
+2. This won't scale well on any devices other than the creators device.
 
 I don’t understand how it’s 2020 and people still forgo the use of these basic HTML tags to create their own Frankenstein tags or to try and recreate basic HTML using ASCII only.
 
