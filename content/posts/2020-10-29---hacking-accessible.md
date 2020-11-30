@@ -402,7 +402,7 @@ Screenreaders are very good at identifying headers. When you read a book, we oft
 
 It’s just more natural. Screenreaders know this and can make the reading experience more natural. But completely forgoing basic HTML to create your own header is just bad.
 
-This goes for any ASCII markup. Instead of using a horizontal rule <HR> people often use dashes.I don’t understand how it’s 2020 and people still forgo the use of these basic HTML tags to create their own Frankenstein tags or to try and recreate basic HTML using ASCII only.
+This goes for any ASCII markup. Instead of using a horizontal rule people often use dashes.I don’t understand how it’s 2020 and people still forgo the use of these basic HTML tags to create their own Frankenstein tags or to try and recreate basic HTML using ASCII only.
 
 It’s just bad practice and takes more work than using regular HTML.
 
@@ -440,7 +440,7 @@ Grab your text and paste it into a TTS. Listen to it back playback to you.
 ## Conclusion
 While I mainly talked about TTS here, there is so much more to A11Y than visually impaired. Check out Mozilla’s docs on A11Y for more info.
 
-<br>
+<hr>
 
 # CTFs
 Now let’s talk about CTFs. Traditionally when people think of A11Y Hacking they think of walkthroughs. But CTFs can also be A11Y.
@@ -492,6 +492,8 @@ It’s all about Try Harder until it is physically impossible for you to try har
 
 ## CTF Writeups
 CTF writeups are literally just blog posts read any A11Y blog about making them better, like this one.
+
+<hr>
 
 # Website A11Y
 I’ve already discussed hacking tools and CTFs, but let’s talk about websites. This is for you, developers of TryHackMe, HackTheBox, ImmersiveLabs & more.
