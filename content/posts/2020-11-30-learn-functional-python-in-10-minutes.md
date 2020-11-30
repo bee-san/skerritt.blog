@@ -3,7 +3,7 @@ template: post
 title: Learn Functional Python in 10 Minutes
 slug: functional
 socialImage: /media/mariusz-slonski-lycnz2hkv0q-unsplash.jpg
-draft: true
+draft: false
 date: 2020-11-30T21:21:14.480Z
 description: >+
   You’ll learn what the functional paradigm is as well as how to use functional
@@ -11,6 +11,8 @@ description: >+
   forms of comprehensions.
 
 category: Datastructures & Algorithms
+tags:
+  - python
 ---
 In this short 10 minute article, you’ll learn what the functional paradigm is in Python. You’ll also learn about list comprehensions.
 
@@ -208,3 +210,235 @@ for num in x:
 	if num < 0:
 		new_list.append(num)
 ```
+
+With filter, this becomes:
+
+```python
+x = range(-5, 5)
+all_less_than_zero = list(filter(lambda num: num < 0, x))
+```
+
+## ☁ Higher Order Functions in Python
+Higher order functions can take functions as parameters and return functions. An example is:
+
+```python
+def summation(nums):
+	return sum(nums)
+def action(func, numbers):
+	return func(numbers)
+print(action(summation, [1, 2, 3]))
+# Output is 6
+```
+
+Or an simple example of the second definition, `return functions`, is:
+
+```python
+def rtnBrandon():
+	return “brandon”
+def rtnJohn():
+	return “john”
+def rtnPerson():
+	age = int(input(“What’s your age?”))
+	if age == 21:
+    	return rtnBrandon()
+	else:
+    	return rtnJohn()
+```
+
+Higher-order functions make non-varying variables easier to work with. We need not store a variable anywhere if all we’re doing is passing data through a long tunnel of functions.
+
+All functions in Python are first-class objects. We define a first-class object as having one or more of these features:
+- Created at runtime
+- Assigned to a variable or element in a data structure
+- Passed as an argument to a function
+- Returned as the result of a function
+So all functions in Python are first-class and can be used as a higher-order function.
+
+## 🎶 Partial Application with Functions
+Partial application (also called closures) is weird but is cool. We can call a function without supplying all the arguments it requires. Let’s see this in an example. We want to create a function which takes 2 arguments, a base and an exponent, and returns base to the power of the exponent, like so:
+
+```python
+def power(base, exponent):
+	return base ** exponent
+```
+
+Now we want to have a dedicated square function, to work out the square of a number using the power function:
+
+```python
+def square(base):
+	return power(base, 2)
+```
+
+This works, but what if we want a cube function? or a function to the power of 4? Can we keep on writing them forever? Well, we could. But programmers are lazy. If we repeatedly do the same thing, it’s a sign that there is a much quicker way to speed things up and that will allow us to not repeat things. We can use partial applications here. Let’s see an example of the square function using a partial application:
+
+```python
+from functools import partial
+square = partial(power, exponent=2)
+print(square(2))
+# output is 4
+```
+
+Isn’t that cool! We can call functions which require 2 arguments, using only 1 argument by telling Python what the second argument is.
+
+We can also use a loop, to generate a power function that works from cubed up to powers of 1000.
+
+```python
+from functools import partial
+powers = []
+for x in range(2, 1001):
+	powers.append(partial(power, exponent = x))
+print(powers[0](3))
+# output is 9
+```
+
+## 🐍 Functional Programming Isn’t Pythonic
+You might have noticed, but a lot of the things we want to do in functional programming revolve around lists. Other than the reduce function & partial application, all the functions we have seen generate lists. Guido (the inventor of Python) dislikes functional stuff in Python because Python already has its own way to generate lists.
+
+If we write “import this” into a Python IDLE session, we’ll get:
+
+```
+>>> import this
+The Zen of Python, by Tim Peters
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren’t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you’re Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it’s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let’s do more of those!
+```
+
+This is the Zen of Python. It’s a poem about what something being Pythonic means. The part we want to relate to here is:
+
+There should be one — and preferably only one — obvious way to do it.
+
+In Python, map & filter can do the same things as a list comprehension (discussed next). This breaks one rule of the Zen of Python, so these parts of functional programming ‘pythonic’.
+
+Another talking point is Lambda. In Python, a lambda function is a normal function. Lambda is syntactic sugar. Both are equivalent:
+
+```python
+foo = lambda a: 2
+def foo(a):
+	return 2
+```
+
+A regular function can do everything a lambda function can, but it doesn’t work the other way around. A lambda function cannot do everything that a regular function can do.
+
+This was a short argument about why functional programming doesn’t fit into the whole Python ecosystem very well. You may have noticed I mentioned list comprehensions earlier, we’ll discuss them now.
+
+## 🎓 List Comprehensions
+Earlier, I mentioned that anything we could do with map or filter, we could do with a list comprehension. This is the part where we’ll learn about them.
+
+A list comprehension is a way to generate lists in Python. The syntax is:
+
+```python
+[function for item in iterable]
+```
+
+So let’s square every number in a list, as an example:
+
+```python
+print([x * x for x in [1, 2, 3, 4]])
+```
+
+Okay, so we can see how we can apply a function to every item in a list. How do we go around applying a filter? Well, look at this code from earlier:
+
+```python
+x = range(-5, 5)
+all_less_than_zero = list(filter(lambda num: num < 0, x))
+print(all_less_than_zero)
+```
+
+We can convert this into a list comprehension like so:
+
+```python
+x = range(-5, 5)
+all_less_than_zero = [num for num in x if num < 0]
+```
+
+List comprehensions support if statements like this. We no longer need to apply a million functions to something to get what you want. If we’re trying to make some kind of list chances are that it’ll look cleaner and easier using a list comprehension.
+
+What if we want to square every number below 0 in a list? Well, with lambda, map and filter we’ll write:
+
+```python
+x = range(-5, 5)
+all_less_than_zero = list(map(lambda num: num * num, list(filter(lambda num: num < 0, x))))
+```
+
+This is long and complicated. With a list comprehension it is:
+
+```python
+x = range(-5, 5)
+all_less_than_zero = [num * num for num in x if num < 0]
+```
+
+A list comprehension is only good for, well, lists. Map and filter work on any iterable, so what’s up with that? We can use any comprehension for any iterable object we encounter.
+
+## 🤔 Comprehensions of Any Iterable
+We can generate any iterable using a comprehension. Since Python 2.7, we can even generate a dictionary (hashmap).
+
+```python
+# Taken from page 70 chapter 3 of Fluent Python by Luciano Ramalho
+DIAL_CODES = [ 
+  (86, ‘China’),
+  (91, ‘India’),
+  (1, ‘United States’),
+  (62, ‘Indonesia’),
+  (55, ‘Brazil’),
+  (92, ‘Pakistan’),
+  (880, ‘Bangladesh’),
+  (234, ‘Nigeria’),
+  (7, ‘Russia’),
+  (81, ‘Japan’),
+  ]
+>>> country_code = {country: code for code, country in DIAL_CODES}
+>>> country_code
+{’Brazil’: 55, ‘Indonesia’: 62, ‘Pakistan’: 92, ‘Russia’: 7, ‘China’: 86, ‘United States’: 1, ‘Japan’: 81, ‘India’: 91, ‘Nigeria’: 234, ‘Bangladesh’: 880}
+>>> {code: country.upper() for country, code in country_code.items() if code < 66}
+{1: ‘UNITED STATES’, 7: ‘RUSSIA’, 62: ‘INDONESIA’, 55: ‘BRAZIL’}# Taken from page 70 chapter 3 of Fluent Python by Luciano Ramalho
+DIAL_CODES = [ 
+  (86, ‘China’),
+  (91, ‘India’),
+  (1, ‘United States’),
+  (62, ‘Indonesia’),
+  (55, ‘Brazil’),
+  (92, ‘Pakistan’),
+  (880, ‘Bangladesh’),
+  (234, ‘Nigeria’),
+  (7, ‘Russia’),
+  (81, ‘Japan’),
+  ]
+>>> country_code = {country: code for code, country in DIAL_CODES}
+>>> country_code
+{’Brazil’: 55, ‘Indonesia’: 62, ‘Pakistan’: 92, ‘Russia’: 7, ‘China’: 86, ‘United States’: 1, ‘Japan’: 81, ‘India’: 91, ‘Nigeria’: 234, ‘Bangladesh’: 880}
+>>> {code: country.upper() for country, code in country_code.items() if code < 66}
+{1: ‘UNITED STATES’, 7: ‘RUSSIA’, 62: ‘INDONESIA’, 55: ‘BRAZIL’}
+```
+
+If it’s an iterable, we can generate it. Let’s look at one last example of sets. If you don’t know what a set is, check out this [other article I wrote](https://skerritt.blog/a-primer-on-set-theory/). The TL;DR is:
+
+- Sets are lists of elements, no element is repeated twice in that list
+- The order in sets do not matter.
+
+```python
+# taken from page 87, chapter 3 of Fluent Python by Luciano Ramalho
+
+>>> from unicodedata import name
+>>> {chr(i) for i in range(32, 256) if 'SIGN' in name(chr(i), '')}
+{'×', '¥', '°', '£', '©', '#', '¬', '%', 'µ', '>', '¤', '±', '¶', '§', '<', '=', '®', '$', '÷', '¢', '+'}
+```
+
+You may notice that sets have the same curly braces as dictionaries. Python is smart. It’ll know whether we're writing a dictionary comprehension or a set comprehension based on whether we provide the extra value for the dictionary or not. If you want to learn more about comprehensions, check out this [visual guide](https://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/).
+
