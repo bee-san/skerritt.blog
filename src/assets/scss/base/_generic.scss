@@ -30,30 +30,30 @@ h6 {
 
 h1 {
   font-size: $typographic-base-font-size * 2.5;
-  @include line-height(1);
+  @include line-height(2);
   @include margin-top(2);
-  @include margin-bottom(1);
+  @include margin-bottom(1.5);
 }
 
 h2 {
   font-size: $typographic-base-font-size * 1.6875;
-  @include line-height(1);
+  @include line-height(2);
   @include margin-top(2);
-  @include margin-bottom(1);
+  @include margin-bottom(1.5);
 }
 
 h3 {
   font-size: $typographic-base-font-size * 1.375;
-  @include line-height(1);
+  @include line-height(2);
   @include margin-top(2);
-  @include margin-bottom(1);
+  @include margin-bottom(1.5);
 }
 
 h4 {
   font-size: $typographic-base-font-size * 1.2;
-  @include line-height(1);
-  @include margin-top(1.5);
-  @include margin-bottom(1);
+  @include line-height(2);
+  @include margin-top(2);
+  @include margin-bottom(1.5);
 }
 
 h5 {
