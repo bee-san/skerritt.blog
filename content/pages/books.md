@@ -1,7 +1,6 @@
 ---
 title: "Favourite Books
 template: "page"
-socialImage: "/media/image-4.jpg"
 ---
 
 1. How to Win Friends and Influence People

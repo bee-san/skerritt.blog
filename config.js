@@ -20,8 +20,8 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Tags',
+      path: '/tags'
     }
   ],
   author: {
@@ -34,7 +34,7 @@ module.exports = {
       telegram: '',
       twitter: 'bee_sec_san',
       github: 'bee-san',
-      rss: '',
+      rss: 'rss.xml',
       vkontakte: '',
       linkedin: '',
       instagram: '',
