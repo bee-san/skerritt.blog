@@ -18,7 +18,10 @@ Some of the things I'm more well known for include:
 * [Competitive Programming](https://binarysearch.com/@/beesan) whereby I try to get better at leetcode style questions.
 
 # What I'm planning next
+
 * AWS certs
 * Leetcode all day every day until I can get a £500,000,000 job at Google
 * Continue my work with TryHackMe
 * More awesome pentesting projects
+
+<iframe src="https://bees.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
