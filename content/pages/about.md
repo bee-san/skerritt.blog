@@ -17,7 +17,7 @@ Some of the things I'm more well known for include:
 * [My open source work](https://github.com/bee-san). Other than pentesting, you'll find me contributing to AI projects such as [TL;DR News](https://github.com/bee-san/tldr-News), [Stegkraken](https://github.com/StegKraken/StegKraken) and more.
 * [Competitive Programming](https://binarysearch.com/@/beesan) whereby I try to get better at leetcode style questions.
 
-# What I'm planning next
+# Next up...
 
 * AWS certs
 * Leetcode all day every day until I can get a £500,000,000 job at Google
