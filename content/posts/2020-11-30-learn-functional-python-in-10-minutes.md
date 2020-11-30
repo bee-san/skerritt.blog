@@ -13,6 +13,7 @@ description: >+
 category: Datastructures & Algorithms
 tags:
   - python
+  - Datastructures and Algorithms
 ---
 In this short 10 minute article, you’ll learn what the functional paradigm is in Python. You’ll also learn about list comprehensions.
 
