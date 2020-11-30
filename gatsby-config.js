@@ -192,6 +192,8 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-twitter`,
+    'gatsby-plugin-use-dark-mode',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
