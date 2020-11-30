@@ -10,6 +10,7 @@ tags:
   - "Programming"
   - "Computer Science"
   - "Ebook"
+  - "Datastructures and Algorithms"
 description: "Learn about Greedy, Divide & Conquer, amd Dynamic Programming."
 socialImage: "/media/p2p.jpg"
 ---
