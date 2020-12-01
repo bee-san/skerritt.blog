@@ -58,16 +58,16 @@ h4 {
 
 h5 {
   font-size: $typographic-base-font-size;
-  @include line-height(1);
-  @include margin-top(2.5);
-  @include margin-bottom(1);
+  @include line-height(2);
+  @include margin-top(2);
+  @include margin-bottom(1.5);
 }
 
 h6 {
   font-size: $typographic-base-font-size;
-  @include line-height(1);
-  @include margin-top(2.5);
-  @include margin-bottom(1);
+  @include line-height(2);
+  @include margin-top(2);
+  @include margin-bottom(1.5);
 }
 
 img {
