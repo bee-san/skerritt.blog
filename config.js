@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Bee',
     photo: '/photo.jpg',
-    bio: "🌌 Computer Scientist ✨Subreddit Lead of @RealTryHackMe 💖 Inventor of RustScan and Ciphey 🌙 Rustacean 🦀 [Twitter](https://twitter.com/bee_sec_san)",
+    bio: "🌌 Computer Scientist ✨Subreddit Lead of @RealTryHackMe 💖 Inventor of RustScan and Ciphey 🌙 Rustacean 🦀",
     contacts: {
       email: '',
       facebook: '',

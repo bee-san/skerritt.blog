@@ -29,8 +29,8 @@ const Post = ({ post }: Props) => {
       <p align="center">You can follow me on <a href="https://twitter.com/bee_sec_san">Twitter</a>
       </p>
       <p align="center">
-      <a href="https://twitter.com/bee_sec_san?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bee_sec_san</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
+      <a href="https://twitter.com/bee_sec_san?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @bee_sec_san</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>        
+      </p>
 
       <div className={styles['post__footer']}>
         <Meta date={date} />
