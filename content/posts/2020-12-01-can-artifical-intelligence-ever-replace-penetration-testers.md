@@ -9,11 +9,11 @@ description: Can Artifical Intelligence ever replace penetration testers?
 category: "Artificial Intelligence "
 ---
 
-# Introduction
-
 In this blog post we'll explore _if_ machines can fully replace pe
 
 Something to note is that predicting the future is hard and this is all entirely my opinion. Many people will have differing ideologies.
+
+<hr>
 
 ## Machine Learning
 
@@ -90,7 +90,7 @@ According to [Sutton & Barto](http://incompleteideas.net/book/the-book.html)
 Reinforcement learning is doing things by reinforcement. Humans learn not to touch the hot stove because it's hot. 
 
 <figure>
-	<img src="/media/aipentesting/action-reward-loop.svg" alt="Agent performs an action on the environment which returns a state (of the agent in the environment) and a reward.">
+	<img src="/media/aipentesting/loop.png" alt="Agent performs an action on the environment which returns a state (of the agent in the environment) and a reward.">
 	<figcaption>Agent performs an action on the environment which returns a state (of the agent in the environment) and a reward.</figcaption>
 </figure>
 
@@ -171,6 +171,8 @@ Can machines be creative? It's an oft asked question. I say yes. Neural networks
 
 Furthermore we have seen creativity in the wild. AlphaGo's famous [Move 37](https://www.wired.com/2016/03/two-moves-alphago-lee-sedol-redefined-future/) is a genius & creative move that turned the course of the entire game and even flummoxed Lee Sedol.
 
+<hr>
+
 ## Applications in InfoSec
 
 Now let's apply what we learnt from AlphaGo to our own theoretical neural network to become a penetration tester.
@@ -219,7 +221,9 @@ Here's a fun idea for an AI that learns from itself.
 
 Then each evolution we only pick the best defender and best attacker. By the time we're finished, we'll have automated blue team && red team which are best in class.
 
-# Humans vs AI
+<hr>
+
+## Humans vs AI
 
 As you can probably guess, penetration testers aren't really at threat any time soon. 60 or 70 years out at most. 
 
@@ -249,7 +253,9 @@ And the human can check for this. It would also help the fact that any large org
 
 Garry Kasparov argues that machines can never be as creative as humans in his book [Deep Thinking](https://www.amazon.co.uk/Deep-Thinking-Machine-Intelligence-Creativity/dp/1473653509) which contradicts my opinion, but is worth reading.
 
-# Conclusion
+<hr>
+
+## Conclusion
 To sum up:
 * AI has the potential to replace humans.
 * Not for a very, very long time/
