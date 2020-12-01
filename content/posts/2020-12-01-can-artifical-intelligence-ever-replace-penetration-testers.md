@@ -1,11 +1,11 @@
 ---
 template: post
-title: Can Artifical Intelligence ever replace penetration testers?
+title: Can Artificial Intelligence ever replace penetration testers?
 slug: ai-pentesting
 socialImage: /media/aipentesting/v2osk-1Z2niiBPg5A-unsplash.jpg
 draft: false
 date: 2020-12-01T01:50:34.453Z
-description: Can Artifical Intelligence ever replace penetration testers?
+description: Can Artificial Intelligence ever replace penetration testers?
 category: "Artificial Intelligence "
 ---
 
