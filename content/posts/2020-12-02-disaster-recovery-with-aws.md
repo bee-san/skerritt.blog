@@ -6,10 +6,14 @@ socialImage: /media/p2p.jpg
 draft: false
 date: 2020-12-02T23:42:12.596Z
 description: A quick introduction to disaster & recovery in AWS
-category: AWS
+category: Cloud
+tags:
+	- "AWS"
+	- "Cloud"
+	- "CCP"
 ---
 
-We'll need to invoke our disaster recovery plans to restore our datta if our storage or server fails.
+We'll need to invoke our disaster recovery plans to restore our data if our storage or server fails.
 
 With traditional backup methods, the data we need might not be available because:
 * Backup data is stored in the same location as the production data, and the disaster impacted the backups.
@@ -59,7 +63,7 @@ Maximum amount of time in which a service can remain unavailable before it's cla
 Maximum amount of time for which data could be lost for a service.
 
 ## How to get data in and out of AWS?
-The method in which we choose to move our data from on-premise to the cloud varies  on our own infrastructure. If we have a direct connection to AWS, we can use that with connectivity of 10 gbp/s.
+The method in which we choose to move our data from on-premise to the cloud varies  on our own infrastructure. If we have a direct connection to AWS, we can use that with a connectivity of 10 gbp/s.
 
 We may need a hardware/software VPN that can be use. 
 
@@ -158,7 +162,7 @@ Can be up to 40TB in size.
 
 Stored in vaults, with different security measures to that of S3.
 
-Used for data archiving and is commonly referred tto as the cold storage service.
+Used for data archiving and is commonly referred to as the cold storage service.
 
 We can move data into glacier using:
 * Lifecycle rules from S3
@@ -203,7 +207,7 @@ From a DR point of view, we want to configure this to help with:
 
 ## Multipart uploads
 * **Multiple concurrent reads & writes (performance). If a folder is larger than 100MB, we should use multi-part upload.**
-This allows us to break an object down into separate parts and upload it (like Bittorrnt).
+This allows us to break an object down into separate parts and upload it (like BitTorrent).
 
 ## S3 Security
 * IAM policies - allow and restrict access to S3 buckets.
