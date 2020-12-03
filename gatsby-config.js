@@ -211,6 +211,19 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs'
+    'gatsby-plugin-optimize-svgs',
+    {
+      resolve: "gatsby-plugin-social-cards",
+      options: {
+        // ommit to skip
+        authorImage: "./static/photo.jpg",
+        // image to use when no cover in frontmatter
+        backgroundImage: "./static/media/mariusz-slonski-lycnz2hkv0q-unsplash.jpg",
+        // author to use when no auth in frontmatter
+        defaultAuthor: "Bee_sec_san",
+        // card design
+        design: "default", // 'default' or 'card'
+      },
+    },
   ]
 };

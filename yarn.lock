@@ -1101,7 +1101,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -8131,6 +8131,19 @@ gatsby-plugin-sitemap@^2.7.0:
     minimatch "^3.0.4"
     pify "^3.0.0"
     sitemap "^1.13.0"
+
+gatsby-plugin-social-cards@^0.5.17:
+  version "0.5.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-social-cards/-/gatsby-plugin-social-cards-0.5.17.tgz#442fc0240c50bf6eb43cd448caa1d5578db7cc29"
+  integrity sha512-7eCS7m5fkcw3gKa4awGp0p7e4Ca7z9Sihlw630ZySmf+PaMq9bqh/GaGsR8KhLy7tifDbzO07WMx0Zef4Ersig==
+
+gatsby-plugin-social9-socialshare@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-social9-socialshare/-/gatsby-plugin-social9-socialshare-1.0.4.tgz#484b24519edd0c0de3712b8b8b76d93309a64707"
+  integrity sha512-W1UB+Rjcjd24kcNWrFuF+yVp/OltPLzwPvEyEj/zXzMcnx8LzZlyw1BDbl8qErzxl8CYXKps66bqYE45GaWsmQ==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+    minimatch "3.0.4"
 
 gatsby-plugin-twitter@^2.5.0:
   version "2.5.0"
