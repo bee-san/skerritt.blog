@@ -1,16 +1,16 @@
 ---
-template: post
-title: Disaster Recovery with AWS
-slug: Aws-disaster-recovery
-socialImage: /media/p2p.jpg
+title:  Disaster Recovery with AWS for CCP
+date: "2020-10-01T23:46:37.121Z"
+template: "post"
 draft: false
-date: 2020-12-02T23:42:12.596Z
-description: A quick introduction to disaster & recovery in AWS
-category: Cloud
+slug: "aws-disaster-recovery"
+category: "cloud"
 tags:
-	- "AWS"
-	- "Cloud"
-	- "CCP"
+  - "AWS"
+  - "Cloud"
+  - "CCP"
+description: "Basics of disaster & recovery with AWS for Certified Cloud Practioner"
+socialImage: "/media/p2p.jpg"
 ---
 
 We'll need to invoke our disaster recovery plans to restore our data if our storage or server fails.

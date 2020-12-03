@@ -1,17 +1,60 @@
 ---
 template: post
-title: Overview of Azure Services 
+title: Overview of Azure Services
 slug: azure-overview-services
 socialImage: /media/p2p.jpg
 draft: false
 date: 2020-12-02T23:42:12.596Z
-description: What are the different Azure services?
-category: cloud
+description: "What are the different Azure services?"
 tags:
     - "azure"
     - "cloud"
     - "AZ-900"
+category: "cloud"
 ---
+
+- [Compute](#compute)
+  - [Azure Virtual Machines](#azure-virtual-machines)
+  - [Azure App Service](#azure-app-service)
+  - [Azure Container Instance](#azure-container-instance)
+  - [Azure Functions](#azure-functions)
+- [Storage](#storage)
+  - [Blob Storage](#blob-storage)
+  - [Azure File Storage](#azure-file-storage)
+  - [Azure Data Lake Storage Gen2](#azure-data-lake-storage-gen2)
+  - [Relational Databases](#relational-databases)
+  - [Azure Synapse Analytics](#azure-synapse-analytics)
+  - [NoSQL](#nosql)
+- [Netowkring](#netowkring)
+  - [Virtual Network (VNet)](#virtual-network-vnet)
+  - [Subnets](#subnets)
+  - [VVNet peering](#vvnet-peering)
+  - [Azure VPN](#azure-vpn)
+  - [ExpressRoute](#expressroute)
+- [Miigration](#miigration)
+  - [Azure Migrates](#azure-migrates)
+  - [Azure Active Directory](#azure-active-directory)
+- [DevOps](#devops)
+  - [Azure DevOps](#azure-devops)
+  - [Azure Pipelines](#azure-pipelines)
+  - [Azure DevTest Labs](#azure-devtest-labs)
+  - [Azure CDN](#azure-cdn)
+- [IoT](#iot)
+  - [Azure IoT Central](#azure-iot-central)
+  - [Azure IoT Hub](#azure-iot-hub)
+  - [Azure Sphere](#azure-sphere)
+- [Analytics](#analytics)
+  - [Azure HDInsight](#azure-hdinsight)
+  - [Azure Databricks](#azure-databricks)
+  - [Azure Synapse Analytics](#azure-synapse-analytics-1)
+- [AI](#ai)
+  - [Cognitive Services](#cognitive-services)
+  - [Azure Bot Service](#azure-bot-service)
+  - [Azure Machine Learning Studio](#azure-machine-learning-studio)
+  - [Machine Learning Services](#machine-learning-services)
+- [Integration](#integration)
+  - [Logic Apps](#logic-apps)
+  - [Event Grid](#event-grid)
 
 # Compute
 
@@ -74,3 +117,53 @@ Sends encrypted traffic over the internet.
 ## ExpressRoute
 Private dedicated connection between us and Azure. Provides higher speed & reliability.
 
+# Miigration
+## Azure Migrates
+Help migrates on-premise to the cloud.
+## Azure Active Directory
+Syncs on-premise with Azure directory through Windows Active Directory.
+
+# DevOps
+## Azure DevOps
+Family of other things in this category.
+## Azure Pipelines
+Creates automated workflows (CI).
+## Azure DevTest Labs
+Spin up non-production environments easily.
+## Azure CDN
+Is a CDN, uses edge server and caching to serve content faster.
+# IoT
+## Azure IoT Central
+Fully managed SAAS that lets us create IoT applications.
+## Azure IoT Hub
+More customised, handles communications with millions of IoT devices. It's what IoT central uses behind the scenes.
+## Azure Sphere
+Make IoT devices more secure.
+# Analytics
+## Azure HDInsight
+Big data frameworks such as Hadoop.
+## Azure Databricks
+More user friendly than Spark
+## Azure Synapse Analytics
+Combines data warehouse functionality with support for Spark.
+# AI
+## Cognitive Services
+Used for prebuilt AI tools. Don't need to know machine learning to use.
+Grouped into 5 categories.
+1. Decision
+2. Language
+3. Speech
+4. Vision (classify images)
+5. Web search
+## Azure Bot Service
+Create chatbots.
+## Azure Machine Learning Studio
+Lets us train and deploy machine learning models with a drag & drop interface.
+## Machine Learning Services
+Full control overy stage of the ML process.
+
+# Integration
+## Logic Apps
+Detect events that happen and notifies us or something else. 
+## Event Grid
+We'd normally need to use Event Grid to notify our logic app of particular events.

@@ -9,6 +9,21 @@ description: Can Artificial Intelligence ever replace penetration testers?
 category: "Artificial Intelligence "
 ---
 
+- [Machine Learning](#machine-learning)
+	- [Supervised Learning](#supervised-learning)
+	- [Unsupervised Learning](#unsupervised-learning)
+	- [Reinforcement Learning](#reinforcement-learning)
+		- [AlphaGo](#alphago)
+			- [Learning from the greats](#learning-from-the-greats)
+			- [Teaching itself](#teaching-itself)
+		- [Creativity](#creativity)
+- [Applications in InfoSec](#applications-in-infosec)
+	- [1. Learning from others](#1-learning-from-others)
+	- [2. Learning from itself](#2-learning-from-itself)
+	- [Blue Team](#blue-team)
+- [Humans vs AI](#humans-vs-ai)
+- [Conclusion](#conclusion)
+
 In this blog post we'll explore _if_ machines can fully replace pe
 
 Something to note is that predicting the future is hard and this is all entirely my opinion. Many people will have differing ideologies.
