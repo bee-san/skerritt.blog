@@ -7,10 +7,10 @@ draft: false
 date: 2020-12-02T23:42:12.596Z
 description: "What are the different Azure services?"
 tags:
-    - "azure"
-    - "cloud"
+    - "Azure"
+    - "Cloud"
     - "AZ-900"
-category: "cloud"
+category: "Cloud"
 ---
 
 - [Compute](#compute)

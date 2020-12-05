@@ -6,11 +6,11 @@ socialImage: /media/p2p.jpg
 draft: false
 date: 2020-12-02T23:42:12.596Z
 description: A quick introduction to cost management & customer support in AWS
-category: cloud
+category: Cloud
 tags:
-    - "aws"
-    - "cloud"
-    - "ccp"
+    - "AWS"
+    - "Cloud"
+    - "CCP"
 ---
 
 There are 4 main support plans::
