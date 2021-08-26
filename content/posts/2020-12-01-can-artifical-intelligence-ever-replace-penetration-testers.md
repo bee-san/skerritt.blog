@@ -6,7 +6,9 @@ socialImage: "/media/aipentesting/v2osk-1Z2niiBPg5A-unsplash.jpg"
 draft: false
 date: 2020-12-01T01:50:34.453Z
 description: Can Artificial Intelligence ever replace penetration testers?
-category: "Artificial Intelligence "
+category: "Artificial Intelligence"
+-tags:
+	- "Artificial Intelligence"
 ---
 
 - [Machine Learning](#machine-learning)
